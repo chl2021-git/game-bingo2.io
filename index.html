@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#444444">
+  <title>JavaScriptでビンゴゲームのデモ | てらこや.work</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="bingo.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div id="result" class="result"></div>
+  <ul id="number" class="number"></ul>
+  <div class="wrapper-button">
+    <button id="button" class="button">START</button>
+  </div>
+<div class="wrapper-settings">
+  <input type="number" id="max-value" placeholder="Enter max value" min="1" max="99" maxlength="2" value="50">
+  <button id="set-max" >Set Max</button>
+</div>
+
+  <audio id="sound-play" preload="auto">
+    <source src="start.mp3" type="audio/mp3">
+  </audio>
+  <audio id="sound-pause" preload="auto">
+    <source src="pause.mp3" type="audio/mp3">
+  </audio>
+  <footer>
+    <a href="https://www.terakoya.work/javascript-jquery-bingo-game-build/">HTML / CSS / JavaScript（jQuery）でビンゴゲームを作成 | てらこや.work</a>
+  </footer>
+</div>
+</body>
+</html>
